@@ -1,0 +1,67 @@
+.mytable{
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  th,td{
+    min-width: 100px !important;
+    width: 100px;
+  }
+  th{
+    height: 32px;
+    border-right: 1px solid #e3e8ee;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #f5f7f9;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    border-bottom: 1px solid #e3e8ee;
+    .cameraicon{
+      margin: 0;
+      vertical-align: middle;
+      line-height: 16px
+    }
+  }
+  td{
+    height: 40px;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    border-bottom: 1px solid #e3e8ee;
+    border-right: 1px solid #e3e8ee;
+    text-align: center;
+    background-color: #fff;
+    transition: background-color 0.2s ease-in-out;
+    border-bottom: 1px solid #e3e8ee;
+    .ivu-form-item{
+      margin-bottom: 0;
+    }
+    //input{
+    //  border: none;
+    //  width: 100%;
+    //  text-align: center;
+    //  color: #333333;
+    //  &:focus{
+    //    border: none;
+    //    box-shadow: none;
+    //    outline: none;
+    //    color: #657180;
+    //  }
+    //}
+    //.ivu-select{
+    //  border: none;
+    //  outline: none;
+    //  box-shadow: none;
+    //  &:focus{
+    //    outline: none;
+    //  }
+    //  .ivu-select-selection{
+    //    border: none;
+    //  }
+    //}
+  }
+}
