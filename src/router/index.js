@@ -90,6 +90,51 @@ export const constantRoutes = [
     ]
   },
   {
+    path: '/',
+    component: Layout,
+    meta: {title: '风控报告', icon: 'dashboard'},
+    level: 0,
+    icon: 'icon-manage_fill',
+    fixed: false,
+    children: [
+      {
+        path: '/riskins_select',
+        name: '风控报告录入',
+        meta: {title: '风控报告录入', icon: 'dashboard'},
+        component: () => import('@/views/riskins/RiskInsSelectInput'),
+      },
+      {
+        path: '/riskins_input',
+        name: '2017版财产险风控模板（专职版）',
+        meta: {title: '风控报告专职版', icon: 'dashboard'},
+        component: () => import('@/views/riskins/RiskInsDetailInput'),
+        // component: () => import('@/views/testLoad/TestLoading'),
+      },
+      {
+        path: '/riskins_firePlu',
+        name: '火灾风险排查模板(简化版)',
+        meta: {title: '火灾风险排查模板(简化版)', icon: 'dashboard'},
+        component: () => import('@/views/riskins/RiskInsFireDangerPluralism'),
+      },
+      {
+        path: '/riskins_pluralism',
+        name: 'RiskInsPluralismInput',
+        component: () => import('@/views/riskins/RiskInsPluralismInput')
+      },
+      {
+        path: '/riskins_machine',
+        name: 'riskInsMachine',
+        component: () => import('@/views/riskins/RiskInsMachine')
+      },
+      {
+        path: '/riskins_clobusiness',
+        name: '营业中断险专用风控模板',
+        meta: {title: '营业中断险专用风控模板', icon: 'dashboard'},
+        component: () => import('@/views/riskins/RiskInsDetailInputCloBusiness'),
+      },
+    ]
+  },
+  {
     path: '/riskinsMainCheckQuery',
     name: 'riskinsMainCheckQuery',
     component: () => import('@/views/riskcheck/RiskinsMainCheckQuery')
